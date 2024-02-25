@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;500;700;900&display=swap");
+:root {
+  --main-color: #0aad0a;
+  --light-color: #f0f3f2;
+  --shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px,
+    rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,
+    rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+  --font-family: "Encode Sans", sans-serif;
+  --rating-color: #ffc908;
+}
+
+body {
+  font-family: var(--font-family) !important;
+}
+.rating-color {
+  color: var(--rating-color);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+a,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+.product:hover {
+  box-shadow: 0 0 8px var(--main-color);
+  border-radius: 27px 27px 27px 27px;
+}
+.product .btn {
+  transition: transform 1s, opacity 1s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+.product:hover .btn {
+  opacity: 1;
+  transform: translateY(0%);
+}
+.font-sm {
+  font-size: 14px;
+}
+.text-main {
+  color: var(--main-color);
+}
+.bg-main {
+  background-color: var(--main-color) !important;
+}
+.bg-main-light {
+  background-color: var(--light-color) !important;
+}
+.loading {
+  z-index: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #4fa74f;
+  flex-direction: column;
+}
+
+.big-slider {
+  height: 400px;
+}
+.sm-slider {
+  height: 200px;
+}
+.card:hover {
+  box-shadow: 1px 1px 10px #4fa74f;
+}
+.card img {
+  height: 300px;
+}
+
+.heart-wishlist {
+  position: absolute;
+  bottom: 100px;
+  right: 15px;
+}
+.taxes {
+  font-size: 10px;
+  color: gray;
+}
+.back-shopping {
+  color: gray;
+  cursor: pointer;
+  font-size: 14px;
+}
+.back-shopping:hover {
+  color: gray;
+}
+.cartItem {
+  position: absolute;
+  top: -15px;
+  font-size: 11px;
+}
+footer .partners img {
+  width: 15%;
+}
+footer .store .google {
+  width: 110px;
+}
+footer .store .app {
+  width: 90px;
+}
+.scrollUp {
+  right: 20px;
+  bottom: 30px;
+}
+.active{
+  font-weight: bolder;
+  color: #4fa74f!important;
+}
